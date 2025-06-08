@@ -310,6 +310,11 @@ video {
   position: relative;
 }
 
+.home__img{
+  width: 300px;
+  margin-inline: auto;
+}
+
 /* Swiper class */
 
 
