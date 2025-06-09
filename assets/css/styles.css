@@ -666,7 +666,7 @@ video {
   box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
   color: var(--black-color);
   display: inline-flex;
-  padding-inline-start: 6px;
+  padding-inline-start: 1px;
   font-size: 1.25rem;
   z-index: var(--z-tooltip);
   transition: bottom .4s, transform .4s;
@@ -887,3 +887,8 @@ video {
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 1.4;
+  }
+}
