@@ -642,10 +642,33 @@ video {
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(0, 0%, 80%);
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: hsl(0, 0%, 60%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(0, 0%, 50%);
+}
 
 /*=============== SCROLL UP ===============*/
-
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  background-color: var(--body-color);
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
+  color: var(--black-color);
+  display: inline-flex;
+  padding-inline-start: 6px;
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
 
 /* Show Scroll Up */
 
